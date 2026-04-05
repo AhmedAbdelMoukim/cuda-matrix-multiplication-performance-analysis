@@ -1,0 +1,87 @@
+=== Execution GPU ===
+Date: Sun Apr  5 06:50:16 PM ADT 2026
+Noeud: dico
+name, memory.total [MiB]
+NVIDIA GeForce RTX 5090, 32607 MiB
+=== Protocole ===
+Prechauffages: 5
+Mesures: 30
+Buffer L2: 128 Mo
+=== Config: M(512x512) * N(512x512) = P(512x512) ===
+Verification:
+Naif -> Err max: 0.000046
+Tuile -> Err max: 0.000046
+Naif:
+Mediane: 0.0512 ms IC 95%: [0.0514, 0.0521]
+GFLOP/s: 5242.9 Go/s: 61.4 CV: 1.77% N: 30/30
+Tuile:
+Mediane: 0.0389 ms IC 95%: [0.0388, 0.0391]
+GFLOP/s: 6898.5 Go/s: 80.8 CV: 0.96% N: 30/30
+Acceleration: 1.32x
+=== Config: M(1024x1024) * N(1024x1024) = P(1024x1024) ===
+Verification:
+Naif -> Err max: 0.000092
+Tuile -> Err max: 0.000092
+Naif:
+Mediane: 0.3133 ms IC 95%: [0.3123, 0.3130]
+GFLOP/s: 6853.4 Go/s: 40.2 CV: 0.31% N: 30/30
+Tuile:
+Mediane: 0.2376 ms IC 95%: [0.2375, 0.2382]
+GFLOP/s: 9039.4 Go/s: 53.0 CV: 0.44% N: 30/30
+Acceleration: 1.32x
+=== Config: M(2048x2048) * N(2048x2048) = P(2048x2048) ===
+Verification:
+Naif -> Err max: 0.000183
+Tuile -> Err max: 0.000183
+Naif:
+Mediane: 2.3112 ms IC 95%: [2.3100, 2.3116]
+GFLOP/s: 7433.4 Go/s: 21.8 CV: 0.09% N: 30/30
+Tuile:
+Mediane: 1.7265 ms IC 95%: [1.7259, 1.7270]
+GFLOP/s: 9950.9 Go/s: 29.2 CV: 0.09% N: 30/30
+Acceleration: 1.34x
+=== Config: M(4096x4096) * N(4096x4096) = P(4096x4096) ===
+Verification:
+Naif -> Err max: 0.000366
+Tuile -> Err max: 0.000366
+Naif:
+Mediane: 18.1678 ms IC 95%: [18.1649, 18.1700]
+GFLOP/s: 7565.0 Go/s: 11.1 CV: 0.04% N: 27/30
+Tuile:
+Mediane: 13.4799 ms IC 95%: [13.4768, 13.4807]
+GFLOP/s: 10195.8 Go/s: 14.9 CV: 0.04% N: 30/30
+Acceleration: 1.35x
+=== Config: M(2048x1024) * N(1024x512) = P(2048x512) ===
+Verification:
+Naif -> Err max: 0.000092
+Tuile -> Err max: 0.000092
+Naif:
+Mediane: 0.3113 ms IC 95%: [0.3113, 0.3113]
+GFLOP/s: 6898.5 Go/s: 47.2 CV: 0.00% N: 16/30
+Tuile:
+Mediane: 0.2335 ms IC 95%: [0.2328, 0.2334]
+GFLOP/s: 9198.0 Go/s: 62.9 CV: 0.33% N: 30/30
+Acceleration: 1.33x
+=== Config: M(1024x4096) * N(4096x512) = P(1024x512) ===
+Verification:
+Naif -> Err max: 0.000366
+Tuile -> Err max: 0.000366
+Naif:
+Mediane: 0.6513 ms IC 95%: [0.6515, 0.6526]
+GFLOP/s: 6594.8 Go/s: 41.9 CV: 0.23% N: 30/30
+Tuile:
+Mediane: 0.4854 ms IC 95%: [0.4854, 0.4860]
+GFLOP/s: 8848.7 Go/s: 56.2 CV: 0.16% N: 30/30
+Acceleration: 1.34x
+=== Config: M(1000x1500) * N(1500x2000) = P(1000x2000) ===
+Verification:
+Naif -> Err max: 0.000122
+Tuile -> Err max: 0.000153
+Naif:
+Mediane: 0.8827 ms IC 95%: [0.8820, 0.8842]
+GFLOP/s: 6797.4 Go/s: 29.5 CV: 0.33% N: 30/30
+Tuile:
+Mediane: 0.6247 ms IC 95%: [0.6253, 0.6261]
+GFLOP/s: 9605.0 Go/s: 41.6 CV: 0.19% N: 29/30
+Acceleration: 1.41x
+=== Termine ===
